@@ -52,7 +52,7 @@
 
 
 
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Which group has  fewer?? There are fewer  dots in group 1 than group 2 . " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="now Which group has fewer?? There are fewer  dots in group 1 than group 2 . " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="textBlock_Loaded"/>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button x:Name="button12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">

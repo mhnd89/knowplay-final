@@ -55,14 +55,14 @@
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button x:Name="button12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="image12" Source="assets/math/comp/plane.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="image12" Source="assets/math/comp/goldfish.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
 
 
                     <Button x:Name="buttodn12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="imadge12" Source="assets/math/comp/dog.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="imadge12" Source="assets/math/comp/cow.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
@@ -70,7 +70,7 @@
 
 
                     <Button x:Name="butt5on12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="imag5e12" Source="assets/math/comp/car111.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="imag5e12" Source="assets/math/comp/cat1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
@@ -86,9 +86,9 @@
 
             </StackPanel>
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Height="260" VerticalAlignment="Center">
-                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="plane " FontSize="64" FontWeight="Normal" Width="360"/>
-                <Button x:Name="but3ton" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click11" Content="dog " FontSize="64" FontWeight="Normal" Width="360"/>
-                <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click1" Content="car  " FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="cat " FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="but3ton" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click11" Content="fish " FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click1" Content="cow  " FontSize="64" FontWeight="Normal" Width="360"/>
 
 
             </StackPanel>

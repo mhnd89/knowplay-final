@@ -1,6 +1,6 @@
 ﻿<Page
     x:Name="pageRoot"
-    x:Class="knowplay.comp94"
+    x:Class="knowplay.comp2"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -46,83 +46,76 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+
+
         <StackPanel HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Center">
 
 
 
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Which group has more?" TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Are there enough pairs of socks for every pair of shoes?" TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button x:Name="button12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="image12" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="image12" Source="assets/math/comp/socks1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
                     <Button x:Name="button122" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima2ge12" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="ima2ge12" Source="assets/math/comp/socks1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
-                 
-
-                    <Button x:Name="buttowdfn122" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima2fdwge12" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                    <Button x:Name="buttown122" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="ima2wge12" Source="assets/math/comp/socks1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
-
-
-                    <Button x:Name="buttoen1222" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="imav22ge12" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                    <Button x:Name="button1222" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="ima22ge12" Source="assets/math/comp/socks1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
                 </StackPanel>
-                <TextBlock Text="group1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32"/>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
 
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Button x:Name="button1322" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="ima2ge123" Source="assets/math/comp/shoez1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+
+                    </Button>
                     <Button x:Name="button13422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima2ge1423" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="ima2ge1423" Source="assets/math/comp/shoez1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
                     <Button x:Name="button613422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima52ge1423" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="ima52ge1423" Source="assets/math/comp/shoez1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
-                    <Button x:Name="button613qw422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima5wqer2ge1423" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
-
-                    </Button>
-
-                    <Button x:Name="buttotgn613422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima52fdgge1423" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
-
-                    </Button>
-
 
                     <Button x:Name="butt2on13422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
-                        <Image x:Name="ima2ge14723" Source="assets/dot.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+                        <Image x:Name="ima2ge14723" Source="assets/math/comp/shoez1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
                     </Button>
 
 
+                    <Button x:Name="bu3tton13422" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="ima2ge147523" Source="assets/math/comp/shoez1.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
 
+                    </Button>
                 </StackPanel>
-                <TextBlock Text="group2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32"/>
+
             </StackPanel>
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Height="260" VerticalAlignment="Center">
-                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="Group1" FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="362" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="Yes" FontSize="64" FontWeight="Normal"/>
 
-                <Button x:Name="button3" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="360" BorderThickness="0" Margin="0,0,0,0" Click="button_Click2" Content="Group2" FontSize="64" FontWeight="Normal"/>
+                <Button x:Name="button3" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="362" BorderThickness="0" Margin="0,0,0,0" Click="button_Click2" Content="No" FontSize="64" FontWeight="Normal"/>
             </StackPanel>
 
             <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text="  correct.   Which group has more?           group 1. or group 2.   " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
-
-
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text=" correct.     Are there enough pairs of socks for every pair of shoes? .              yes. or no.   " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
         </StackPanel>
+
 
 
     </Grid>

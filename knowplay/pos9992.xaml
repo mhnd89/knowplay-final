@@ -1,6 +1,6 @@
 ﻿<Page
     x:Name="pageRoot"
-    x:Class="knowplay.comp9991"
+    x:Class="knowplay.pos9992"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -47,14 +47,25 @@
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
 
-
         <StackPanel HorizontalAlignment="Center" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center">
 
 
 
 
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="congratulations you just finished the comparing lessons!  " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="textBlock_Loaded"/>
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="congratulations now you know what is inside and outside,
+Above and below, 
 
+Left, middle, and right. " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="button" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="183,0" BorderThickness="0" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsTapEnabled="False" IsRightTapEnabled="False">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Image Source="assets/math/comp/cat1.png" Height="116" />
+                    <Image Source="assets/math/comp/dog.png" Height="116" />
+                    <Image Source="assets/math/comp/goldfish.png" Height="116" />
+
+                    <Image Source="assets/math/comp/cow.png" Height="116" />
+
+                </StackPanel>
+            </Button>
 
 
             <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" BorderThickness="0" Click="button1_Click">
@@ -69,7 +80,6 @@
 
 
         </StackPanel>
-
 
     </Grid>
 </Page>

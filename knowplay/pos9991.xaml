@@ -46,5 +46,63 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+
+
+        <StackPanel HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Center">
+
+
+
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="What is in the middle?" TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="button12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="image12" Source="assets/math/comp/plane.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+
+                    </Button>
+
+
+
+                    <Button x:Name="buttodn12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="imadge12" Source="assets/math/comp/dog.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+
+                    </Button>
+
+
+
+
+                    <Button x:Name="butt5on12" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                        <Image x:Name="imag5e12" Source="assets/math/comp/car111.png" Width="95" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110"/>
+
+                    </Button>
+
+
+
+
+
+
+
+
+                </StackPanel>
+
+
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Height="260" VerticalAlignment="Center">
+                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="plane " FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="but3ton" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click11" Content="dog " FontSize="64" FontWeight="Normal" Width="360"/>
+                <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Stretch" BorderThickness="0" Margin="0,0,0,0" Click="button_Click1" Content="car  " FontSize="64" FontWeight="Normal" Width="360"/>
+
+
+            </StackPanel>
+
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+
+
+        </StackPanel>
+
+
+
+
     </Grid>
 </Page>

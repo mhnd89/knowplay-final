@@ -1,6 +1,6 @@
 ﻿<Page
     x:Name="pageRoot"
-    x:Class="knowplay.comp9991"
+    x:Class="knowplay.count"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -46,29 +46,29 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-
-
         <StackPanel HorizontalAlignment="Center" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center">
 
 
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="How many dots are there?" TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="button1" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"  Margin="0,0,0,0">
+                    <Image x:Name="image1" Source="assets/dot.png" Height="71" Width="53"/>
+                </Button>
 
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" Height="264" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="button" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="362" BorderThickness="0" Margin="0,0,0,0" Click="button_Click" Content="1" FontSize="64" FontWeight="Normal"/>
+                <Button x:Name="button2" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="362" BorderThickness="0" Margin="0,0,0,0" Click="button_Click1" Content="2" FontSize="64" FontWeight="Normal"/>
+                <Button x:Name="button3" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="362" BorderThickness="0" Margin="0,0,0,0" Click="button_Click2" Content="3" FontSize="64" FontWeight="Normal"/>
+            </StackPanel>
 
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="congratulations you just finished the comparing lessons!  " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="textBlock_Loaded"/>
-
-
-
-            <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" BorderThickness="0" Click="button1_Click">
-                <StackPanel Orientation="Vertical">
-                    <Image Source="assets/mathh.png" Height="150" />
-                    <TextBlock Text="menu" FontSize="50" TextAlignment="Center"/>
-                </StackPanel>
-
-            </Button>
-
-
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="how many dots are there? . 1 or 2 or 3." FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
 
 
         </StackPanel>
+
+
 
 
     </Grid>

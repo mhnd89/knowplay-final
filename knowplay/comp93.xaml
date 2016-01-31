@@ -118,6 +118,7 @@
             </StackPanel>
 
             <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text="correct.     Which group has more?           group 1. or group 2.   " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
 

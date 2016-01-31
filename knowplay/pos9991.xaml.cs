@@ -102,5 +102,20 @@ namespace knowplay
         }
 
         #endregion
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            textBlock1.Text = "try again!";
+        }
+
+        private void button_Click1(object sender, RoutedEventArgs e)
+        {
+            textBlock1.Text = "try again!";
+        }
+
+        private void button_Click11(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(pos9992));
+        }
     }
 }
