@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87C55B06-5AB5-413C-9F4A-9D631F703A78}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>knowplay</RootNamespace>
+    <AssemblyName>knowplay</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>knowplay_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <SDKReference Include="Microsoft.Kinect.Toolkit.Input, version=2.0">
+      <Name>Microsoft.Kinect.Toolkit.Input</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.Kinect.Xaml.Controls, Version=2.0">
+      <Name>Microsoft.Kinect.Xaml.Controls</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, version=12.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsPreview.Kinect, Version=2.0">
+      <Name>WindowsPreview.Kinect</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp0.xaml.cs">
+      <DependentUpon>comp0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp11.xaml.cs">
+      <DependentUpon>comp11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp2.xaml.cs">
+      <DependentUpon>comp2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp3.xaml.cs">
+      <DependentUpon>comp3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp4.xaml.cs">
+      <DependentUpon>comp4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp5.xaml.cs">
+      <DependentUpon>comp5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp6.xaml.cs">
+      <DependentUpon>comp6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp7.xaml.cs">
+      <DependentUpon>comp7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp8.xaml.cs">
+      <DependentUpon>comp8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp9.xaml.cs">
+      <DependentUpon>comp9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp91.xaml.cs">
+      <DependentUpon>comp91.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp912.xaml.cs">
+      <DependentUpon>comp912.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp92.xaml.cs">
+      <DependentUpon>comp92.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp93.xaml.cs">
+      <DependentUpon>comp93.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp94.xaml.cs">
+      <DependentUpon>comp94.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp95.xaml.cs">
+      <DependentUpon>comp95.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp96.xaml.cs">
+      <DependentUpon>comp96.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp97.xaml.cs">
+      <DependentUpon>comp97.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp98.xaml.cs">
+      <DependentUpon>comp98.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp99.xaml.cs">
+      <DependentUpon>comp99.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp991.xaml.cs">
+      <DependentUpon>comp991.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp992.xaml.cs">
+      <DependentUpon>comp992.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp993.xaml.cs">
+      <DependentUpon>comp993.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp995.xaml.cs">
+      <DependentUpon>comp995.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp996.xaml.cs">
+      <DependentUpon>comp996.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp997.xaml.cs">
+      <DependentUpon>comp997.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp998.xaml.cs">
+      <DependentUpon>comp998.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp999.xaml.cs">
+      <DependentUpon>comp999.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="comp9991.xaml.cs">
+      <DependentUpon>comp9991.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count-1.xaml.cs">
+      <DependentUpon>count-1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count-2.xaml.cs">
+      <DependentUpon>count-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count.xaml.cs">
+      <DependentUpon>count.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count0.xaml.cs">
+      <DependentUpon>count0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count1.xaml.cs">
+      <DependentUpon>count1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count2.xaml.cs">
+      <DependentUpon>count2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count3.xaml.cs">
+      <DependentUpon>count3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count4.xaml.cs">
+      <DependentUpon>count4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count5.xaml.cs">
+      <DependentUpon>count5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count6.xaml.cs">
+      <DependentUpon>count6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count7.xaml.cs">
+      <DependentUpon>count7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count8.xaml.cs">
+      <DependentUpon>count8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count9.xaml.cs">
+      <DependentUpon>count9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count91.xaml.cs">
+      <DependentUpon>count91.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count92.xaml.cs">
+      <DependentUpon>count92.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count93.xaml.cs">
+      <DependentUpon>count93.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count94.xaml.cs">
+      <DependentUpon>count94.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count95.xaml.cs">
+      <DependentUpon>count95.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count96.xaml.cs">
+      <DependentUpon>count96.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count97.xaml.cs">
+      <DependentUpon>count97.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count98.xaml.cs">
+      <DependentUpon>count98.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="count99.xaml.cs">
+      <DependentUpon>count99.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mainpage.xaml.cs">
+      <DependentUpon>mainpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="math.xaml.cs">
+      <DependentUpon>math.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="navp1.xaml.cs">
+      <DependentUpon>navp1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos1.xaml.cs">
+      <DependentUpon>pos1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos2.xaml.cs">
+      <DependentUpon>pos2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos3.xaml.cs">
+      <DependentUpon>pos3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos4.xaml.cs">
+      <DependentUpon>pos4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos5.xaml.cs">
+      <DependentUpon>pos5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos6.xaml.cs">
+      <DependentUpon>pos6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos7.xaml.cs">
+      <DependentUpon>pos7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos8.xaml.cs">
+      <DependentUpon>pos8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos9.xaml.cs">
+      <DependentUpon>pos9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos991.xaml.cs">
+      <DependentUpon>pos991.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos992.xaml.cs">
+      <DependentUpon>pos992.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos993.xaml.cs">
+      <DependentUpon>pos993.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos994.xaml.cs">
+      <DependentUpon>pos994.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos995.xaml.cs">
+      <DependentUpon>pos995.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos996.xaml.cs">
+      <DependentUpon>pos996.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos997.xaml.cs">
+      <DependentUpon>pos997.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos998.xaml.cs">
+      <DependentUpon>pos998.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos999.xaml.cs">
+      <DependentUpon>pos999.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pos9991.xaml.cs">
+      <DependentUpon>pos9991.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataModel\SampleDataSource.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="shapes.xaml.cs">
+      <DependentUpon>shapes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes1.xaml.cs">
+      <DependentUpon>shapes1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes91.xaml.cs">
+      <DependentUpon>shapes91.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes2.xaml.cs">
+      <DependentUpon>shapes2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes3.xaml.cs">
+      <DependentUpon>shapes3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes4.xaml.cs">
+      <DependentUpon>shapes4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes5.xaml.cs">
+      <DependentUpon>shapes5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes6.xaml.cs">
+      <DependentUpon>shapes6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes7.xaml.cs">
+      <DependentUpon>shapes7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes8.xaml.cs">
+      <DependentUpon>shapes8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes9.xaml.cs">
+      <DependentUpon>shapes9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes92.xaml.cs">
+      <DependentUpon>shapes92.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes93.xaml.cs">
+      <DependentUpon>shapes93.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes94.xaml.cs">
+      <DependentUpon>shapes94.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes95.xaml.cs">
+      <DependentUpon>shapes95.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shapes96.xaml.cs">
+      <DependentUpon>shapes96.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Common\ReadMe.txt" />
+    <None Include="knowplay_TemporaryKey.pfx" />
+    <Content Include="Assets\aboutus.png" />
+    <Content Include="Assets\dot.png" />
+    <Content Include="Assets\englsh.png" />
+    <Content Include="Assets\exit.png" />
+    <Content Include="Assets\goit.png" />
+    <Content Include="Assets\home.png" />
+    <Content Include="Assets\math.jpeg" />
+    <Content Include="Assets\mathh.png" />
+    <Content Include="Assets\math\cir.png" />
+    <Content Include="Assets\math\Classify.png" />
+    <Content Include="Assets\math\compare.png" />
+    <Content Include="Assets\math\comp\but1.png" />
+    <Content Include="Assets\math\comp\butterfly.png" />
+    <Content Include="Assets\math\comp\butterfly2.png" />
+    <Content Include="Assets\math\comp\car111.png" />
+    <Content Include="Assets\math\comp\carrot.png" />
+    <Content Include="Assets\math\comp\cat1.png" />
+    <Content Include="Assets\math\comp\cow.png" />
+    <Content Include="Assets\math\comp\cowbell.png" />
+    <Content Include="Assets\math\comp\dog.png" />
+    <Content Include="Assets\math\comp\dogbone.png" />
+    <Content Include="Assets\math\comp\dogbowl.png" />
+    <Content Include="Assets\math\comp\fishbowl.png" />
+    <Content Include="Assets\math\comp\goldfish.png" />
+    <Content Include="Assets\math\comp\paper.png" />
+    <Content Include="Assets\math\comp\penc.png" />
+    <Content Include="Assets\math\comp\plane.png" />
+    <Content Include="Assets\math\comp\plate.png" />
+    <Content Include="Assets\math\comp\rab.png" />
+    <Content Include="Assets\math\comp\shoez1.png" />
+    <Content Include="Assets\math\comp\socks1.png" />
+    <Content Include="Assets\math\comp\soda.png" />
+    <Content Include="Assets\math\comp\soda1.png" />
+    <Content Include="Assets\math\comp\sodacup.svg" />
+    <Content Include="Assets\math\comp\spider.png" />
+    <Content Include="Assets\math\comp\spoon.png" />
+    <Content Include="Assets\math\comp\straw1.png" />
+    <Content Include="Assets\math\comp\tulip.png" />
+    <Content Include="Assets\math\count.png" />
+    <Content Include="Assets\math\hex.png" />
+    <Content Include="Assets\math\Money.png" />
+    <Content Include="Assets\math\Positions.png" />
+    <Content Include="Assets\math\rec.png" />
+    <Content Include="Assets\math\shapes.png" />
+    <Content Include="Assets\math\Size.png" />
+    <Content Include="Assets\math\squ.png" />
+    <Content Include="Assets\math\comp\tball.png" />
+    <Content Include="Assets\math\tri.png" />
+    <Content Include="Assets\more.png" />
+    <Content Include="Assets\sci.png" />
+    <Content Include="DataModel\SampleData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\LightGray.png" />
+    <Content Include="Assets\MediumGray.png" />
+    <Content Include="Assets\DarkGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="comp0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp91.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp912.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp92.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp93.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp94.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp95.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp96.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp97.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp98.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp99.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp991.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp992.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp993.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp995.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp996.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp997.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp998.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp999.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comp9991.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count-1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count91.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count92.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count93.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count94.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count95.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count96.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count97.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count98.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="count99.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mainpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="math.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="navp1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos991.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos992.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos993.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos994.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos995.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos996.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos997.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos998.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos999.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pos9991.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes91.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes92.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes93.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes94.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes95.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shapes96.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
