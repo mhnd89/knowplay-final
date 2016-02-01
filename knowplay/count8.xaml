@@ -74,6 +74,7 @@
 
             </Button>
 
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text=" correct.. now .count the the green dots?   .. there are 6 dots   " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
 

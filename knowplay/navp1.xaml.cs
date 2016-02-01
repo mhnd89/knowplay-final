@@ -105,7 +105,7 @@ namespace knowplay
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(math));
+            Frame.Navigate(typeof(engl));
         }
     }
 }

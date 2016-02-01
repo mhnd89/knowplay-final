@@ -107,5 +107,10 @@ namespace knowplay
         {
             Frame.Navigate(typeof(count1));
         }
+
+        private void textBlock2_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

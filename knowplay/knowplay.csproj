@@ -273,6 +273,9 @@
     <Compile Include="count99.xaml.cs">
       <DependentUpon>count99.xaml</DependentUpon>
     </Compile>
+    <Compile Include="engl.xaml.cs">
+      <DependentUpon>engl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="mainpage.xaml.cs">
       <DependentUpon>mainpage.xaml</DependentUpon>
     </Compile>
@@ -670,6 +673,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="count99.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="engl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

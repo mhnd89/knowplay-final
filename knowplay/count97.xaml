@@ -104,6 +104,7 @@
 
             <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" Height="100" FontSize="64" TextAlignment="Center" Foreground="#FFF01010"/>
 
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="correct. .. how many dots are there? .   9 or 10 or 8" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
 
 
 
