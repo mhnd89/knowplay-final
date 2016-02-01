@@ -63,7 +63,7 @@
 
 
            
-                <Button x:Name="button" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button1_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/mathh.png" Stretch="Uniform"  />
                         <TextBlock Text="Math" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
@@ -71,7 +71,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="button2" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button2" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button2_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/englsh.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="english" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
@@ -80,7 +80,7 @@
                 </Button>
 
 
-                <Button x:Name="button3" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button3" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button3_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/sci.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="science" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
@@ -88,7 +88,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="button4" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button4" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button4_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/more.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="can add" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
@@ -96,7 +96,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="button5" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button5" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button5_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/more.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="can add" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
