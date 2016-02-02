@@ -118,5 +118,10 @@ namespace knowplay
         {
             Frame.Navigate(typeof(comp0));
         }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(pos1));
+        }
     }
 }

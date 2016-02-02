@@ -62,6 +62,7 @@
             </StackPanel>
 
             <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text=" correct. , What shape is this??.  is it a square or a circle or a triangle          " FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
 
         </StackPanel>
 

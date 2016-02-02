@@ -67,6 +67,7 @@
             </Button>
 
 
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text=" A triangle has 3 sides. This shape has 3 sides: This shape is a triangle " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
 
