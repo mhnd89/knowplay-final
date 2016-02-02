@@ -273,8 +273,8 @@
     <Compile Include="count99.xaml.cs">
       <DependentUpon>count99.xaml</DependentUpon>
     </Compile>
-    <Compile Include="engl.xaml.cs">
-      <DependentUpon>engl.xaml</DependentUpon>
+    <Compile Include="English.xaml.cs">
+      <DependentUpon>English.xaml</DependentUpon>
     </Compile>
     <Compile Include="mainpage.xaml.cs">
       <DependentUpon>mainpage.xaml</DependentUpon>
@@ -399,6 +399,9 @@
     <Compile Include="shapes96.xaml.cs">
       <DependentUpon>shapes96.xaml</DependentUpon>
     </Compile>
+    <Compile Include="words1.xaml.cs">
+      <DependentUpon>words1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -412,6 +415,7 @@
     <Content Include="Assets\exit.png" />
     <Content Include="Assets\goit.png" />
     <Content Include="Assets\home.png" />
+    <Content Include="Assets\IMG_1175.png" />
     <Content Include="Assets\math.jpeg" />
     <Content Include="Assets\mathh.png" />
     <Content Include="Assets\math\cir.png" />
@@ -456,6 +460,7 @@
     <Content Include="Assets\math\tri.png" />
     <Content Include="Assets\more.png" />
     <Content Include="Assets\sci.png" />
+    <Content Include="Assets\words.png" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>
   <ItemGroup>
@@ -676,7 +681,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="engl.xaml">
+    <Page Include="English.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -833,6 +838,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="shapes96.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="words1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

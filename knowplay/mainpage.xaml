@@ -11,8 +11,18 @@
 
         <Viewbox  Grid.Column="0" >
             <Grid Height="100" Width="177">
-                <Button x:Name="button" Content="start" HorizontalAlignment="Stretch" Margin="50,55,52,0" VerticalAlignment="Top" Height="35" BorderThickness="0" Click="button_Click_1"/>
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="38,10,0,0" TextWrapping="Wrap" Text="welcome" VerticalAlignment="Top" Height="20" Width="100" FontSize="16" TextAlignment="Center"/>
+                <Grid.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/IMG_1175.png"/>
+                </Grid.Background>
+                <Button x:Name="button" Content="start" HorizontalAlignment="Stretch" Margin="57,74,45,-9" VerticalAlignment="Top" Height="35" BorderThickness="0" Click="button_Click_1" Foreground="#FFFB8C1D"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="31,-8,0,0" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Top" Height="46" Width="120" FontSize="26.667" TextAlignment="Center" FontFamily="Comic Sans MS">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF4AFFA4" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                </TextBlock>
 
                 <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text="add the text to speech Here." VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded"/>
 
