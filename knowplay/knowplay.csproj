@@ -351,6 +351,42 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="rid.xaml.cs">
+      <DependentUpon>rid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid1.xaml.cs">
+      <DependentUpon>rid1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid2.xaml.cs">
+      <DependentUpon>rid2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid3.xaml.cs">
+      <DependentUpon>rid3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid4.xaml.cs">
+      <DependentUpon>rid4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid5.xaml.cs">
+      <DependentUpon>rid5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid6.xaml.cs">
+      <DependentUpon>rid6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid7.xaml.cs">
+      <DependentUpon>rid7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid8.xaml.cs">
+      <DependentUpon>rid8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid9.xaml.cs">
+      <DependentUpon>rid9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid91.xaml.cs">
+      <DependentUpon>rid91.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rid92.xaml.cs">
+      <DependentUpon>rid92.xaml</DependentUpon>
+    </Compile>
     <Compile Include="shapes.xaml.cs">
       <DependentUpon>shapes.xaml</DependentUpon>
     </Compile>
@@ -769,6 +805,54 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pos9992.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid91.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rid92.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
