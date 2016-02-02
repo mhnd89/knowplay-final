@@ -273,8 +273,8 @@
     <Compile Include="count99.xaml.cs">
       <DependentUpon>count99.xaml</DependentUpon>
     </Compile>
-    <Compile Include="English.xaml.cs">
-      <DependentUpon>English.xaml</DependentUpon>
+    <Compile Include="engl.xaml.cs">
+      <DependentUpon>engl.xaml</DependentUpon>
     </Compile>
     <Compile Include="mainpage.xaml.cs">
       <DependentUpon>mainpage.xaml</DependentUpon>
@@ -434,9 +434,6 @@
     </Compile>
     <Compile Include="shapes96.xaml.cs">
       <DependentUpon>shapes96.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="words1.xaml.cs">
-      <DependentUpon>words1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -717,7 +714,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="English.xaml">
+    <Page Include="engl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -922,10 +919,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="shapes96.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="words1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
