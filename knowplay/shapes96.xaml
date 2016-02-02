@@ -72,6 +72,7 @@
 
             </Button>
 
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text=" congratulations now you Identify circles, squares, triangles, squares and rectangles     " FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
 
 
 

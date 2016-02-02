@@ -75,7 +75,7 @@
 
             
 
-            <Button x:Name="button7" BorderThickness="0" Margin="10" HorizontalAlignment="Center">
+            <Button x:Name="button7" BorderThickness="0" Margin="10" HorizontalAlignment="Center" Click="button7_Click">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Image Source="assets/math/Positions.png" Height="230" />
                     <TextBlock Text="Positions" FontSize="40" TextAlignment="Center"/>

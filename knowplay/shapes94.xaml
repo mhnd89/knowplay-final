@@ -71,6 +71,7 @@
 
 
 
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="   These shapes are not rectangles:  " FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
 
 
         </StackPanel>

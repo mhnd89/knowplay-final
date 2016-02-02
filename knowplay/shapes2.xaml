@@ -65,6 +65,7 @@
 
             </Button>
 
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text=" A square has 4 equal sides. This shape has 4 equal sides: This shape is a square. " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
 

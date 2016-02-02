@@ -77,6 +77,10 @@ Left, middle, and right. " TextAlignment="Center" FontSize="48" HorizontalAlignm
             </Button>
 
 
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text=" congratulations now you know what is inside and outside,
+Above and below, 
+
+Left, middle, and right. " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
         </StackPanel>

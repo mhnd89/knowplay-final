@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Media.SpeechSynthesis;
+using Windows.Media;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -24,6 +26,8 @@ namespace knowplay
     public sealed partial class pos9992 : Page
     {
 
+        SpeechSynthesizer synth;
+        MediaElement media;
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
@@ -51,6 +55,9 @@ namespace knowplay
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
+            synth = new SpeechSynthesizer();
+            media = new MediaElement();
+
         }
 
         /// <summary>
@@ -107,5 +114,15 @@ namespace knowplay
         {
             Frame.Navigate(typeof(math));
         }
+
+
+        private async void textBlock2_Loaded(object sender, RoutedEventArgs e)
+        {
+            SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync(textBlock2.Text.ToString());
+            media.SetSource(stream, stream.ContentType);
+            media.Play();
+        }
+
+
     }
 }

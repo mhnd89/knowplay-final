@@ -53,7 +53,7 @@
 
 
 
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Is the fish  above the box." TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text=" the fish is above the box." TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                    
@@ -85,6 +85,7 @@
 
             <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" Foreground="#FFF01010" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="448,361,0,0" TextWrapping="Wrap" Text="  now, the fish is above the box. " VerticalAlignment="Top" Width="479" Height="159" FontSize="48" Loaded="textBlock2_Loaded" Visibility="Collapsed"/>
 
 
 
