@@ -15,8 +15,8 @@
 
         <TextBlock x:Name="textBlock" TextWrapping="Wrap" 
                        Text="Welcome " TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="button1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" Width="250" Height="450">
-            <MediaElement x:Name="mediaElement" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="assets/engagmentvid.mp4" />
+        <Button x:Name="button1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" Width="250" Height="450" IsEnabled="False"   >
+            <MediaElement x:Name="mediaElement" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="assets/engagmentvid.mp4"  />
 
 
 
