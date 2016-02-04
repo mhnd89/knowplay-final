@@ -444,10 +444,14 @@
     <None Include="knowplay_TemporaryKey.pfx" />
     <Content Include="Assets\aboutus.png" />
     <Content Include="Assets\dot.png" />
+    <Content Include="Assets\engagmentvid.mp4" />
     <Content Include="Assets\englsh.png" />
     <Content Include="Assets\exit.png" />
     <Content Include="Assets\goit.png" />
     <Content Include="Assets\home.png" />
+    <Content Include="Assets\homee.ico" />
+    <Content Include="Assets\homee1.png" />
+    <Content Include="Assets\homee2.png" />
     <Content Include="Assets\IMG_1175.png" />
     <Content Include="Assets\math.jpeg" />
     <Content Include="Assets\mathh.png" />
@@ -492,7 +496,9 @@
     <Content Include="Assets\math\comp\tball.png" />
     <Content Include="Assets\math\tri.png" />
     <Content Include="Assets\more.png" />
+    <Content Include="Assets\rid.png" />
     <Content Include="Assets\sci.png" />
+    <Content Include="Assets\words2.png" />
     <Content Include="Assets\words.png" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>

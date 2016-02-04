@@ -134,5 +134,13 @@ namespace knowplay
 
             Frame.Navigate(typeof(rid5));
         }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(navp1));
+
+
+        }
     }
 }

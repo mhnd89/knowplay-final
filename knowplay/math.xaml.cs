@@ -123,5 +123,12 @@ namespace knowplay
         {
             Frame.Navigate(typeof(pos1));
         }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(navp1));
+
+        }
     }
 }

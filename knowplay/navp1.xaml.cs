@@ -132,5 +132,10 @@ namespace knowplay
         {
             Frame.Navigate(typeof(math));
         }
+
+        private void button9_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
     }
 }

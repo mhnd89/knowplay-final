@@ -127,5 +127,11 @@ namespace knowplay
             media.Play();
         }
 
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(navp1));
+
+        }
     }
 }

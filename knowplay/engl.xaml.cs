@@ -102,5 +102,20 @@ namespace knowplay
         }
 
         #endregion
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(rid));
+        }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(pos1));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(navp1));
+        }
     }
 }

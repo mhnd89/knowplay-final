@@ -130,5 +130,13 @@ namespace knowplay
             media.SetSource(stream, stream.ContentType);
             media.Play();
         }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(navp1));
+
+
+        }
     }
 }

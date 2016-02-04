@@ -12,7 +12,7 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
+        <x:String x:Key="AppName">What am I?</x:String>
     </Page.Resources>
 
     <!--
@@ -46,5 +46,37 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+
+        <StackPanel HorizontalAlignment="Center" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center">
+
+
+
+
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Congratulation, you were able to solve all the riddles" TextAlignment="Center" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="button" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="183,0" BorderThickness="0" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsTapEnabled="False" IsRightTapEnabled="False">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Image Source="assets/rid.png" Height="116" />
+                
+
+
+                </StackPanel>
+            </Button>
+
+
+            <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" BorderThickness="0" Click="button1_Click">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="assets/englsh.png" Height="150" />
+                    <TextBlock Text="menu" FontSize="50" TextAlignment="Center"/>
+                </StackPanel>
+
+            </Button>
+
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text=" Congratulation, you were able to solve all the riddles   " FontSize="64" TextAlignment="Center" Foreground="#FFF01010" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Opacity="0.99" Loaded="textBlock2_Loaded"/>
+
+
+
+        </StackPanel>
+
+
     </Grid>
 </Page>

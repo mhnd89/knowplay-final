@@ -12,7 +12,7 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">knowdgep</x:String>
+        <x:String x:Key="AppName">Knowledge Playground</x:String>
     </Page.Resources>
 
     <!--
@@ -80,7 +80,7 @@
                 </Button>
 
 
-                <Button x:Name="button3" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button3_Click" ManipulationMode="None">
+                <!--<Button x:Name="button3" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button3_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/sci.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="science" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
@@ -112,9 +112,9 @@
                         <TextBlock Text="about" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />
 
                     </StackPanel>
-                </Button>
+                </Button>-->
 
-                <Button x:Name="button7" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button_Click" ManipulationMode="None">
+                <Button x:Name="button9" BorderThickness="0" HorizontalAlignment="Center" Height="380" Width="350"  Click="button9_Click" ManipulationMode="None">
                     <StackPanel Orientation="Vertical">
                         <Image Source="assets/exit.png" Stretch="Uniform" Height="300"  />
                         <TextBlock Text="exit" FontSize="40" FontWeight="Normal" HorizontalAlignment="Center"  />

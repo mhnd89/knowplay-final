@@ -12,7 +12,7 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
+        <x:String x:Key="AppName">Positions</x:String>
     </Page.Resources>
 
     <!--
@@ -70,7 +70,7 @@ Left, middle, and right. " TextAlignment="Center" FontSize="48" HorizontalAlignm
 
             <Button x:Name="button1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" BorderThickness="0" Click="button1_Click">
                 <StackPanel Orientation="Vertical">
-                    <Image Source="assets/mathh.png" Height="150" />
+                    <Image Source="assets/englsh.png" Height="150" />
                     <TextBlock Text="menu" FontSize="50" TextAlignment="Center"/>
                 </StackPanel>
 
